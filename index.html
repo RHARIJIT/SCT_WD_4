@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do APP</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quote"><h1>"Plan daily. Achieve deeply"</h1></div>
+    <div class="container">
+      <div class="todo-app">
+        <h1>To-Do APP</h1>
+        <div class="stat-container">
+          <div class="details">
+            <h3>Keep it Up</h3>
+            <div id="progressbar"><div id="progress"></div></div>
+          </div>
+          <div id="numbers">0 / 0</div>
+        </div>
+        <form class="input-area">
+          <div class="ui">
+            <div class="input-wrapper input-wrapper-1">
+              <input type="text" id="task-input" placeholder="Input new task" />
+            </div>
+            <div class="input-wrapper input-wrapper-2">
+              <input type="datetime-local" id="datetime-input" />
+            </div>
+          </div>
+          <button type="submit" id="add-task-btn">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </form>
+        <div class="todos-container">
+          <ul id="task-list"></ul>
+          <img
+            src="Images/da04285405d9e0def7da6a5afad7e5a2.png"
+            class="empty-image"
+            alt="empty"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
